@@ -7,13 +7,10 @@ def app():
 
     st.markdown(
         """
-    A [streamlit](https://streamlit.io) app template for geospatial applications based on [streamlit-option-menu](https://github.com/victoryhb/streamlit-option-menu). 
-    To create a direct link to a pre-selected menu, add `?page=<app name>` to the URL, e.g., `?page=upload`.
-    https://share.streamlit.io/giswqs/streamlit-template?page=upload
-
+    A [streamlit](https://streamlit.io) app for geospatial monitoring of crop health using Sentinel 2 imagery.
     """
     )
 
-    m = leafmap.Map(locate_control=True)
+    m = leafmap.Map(center= [-13, 28], zoom= 6)
     m.add_basemap("ROADMAP")
     m.to_streamlit(height=700)
