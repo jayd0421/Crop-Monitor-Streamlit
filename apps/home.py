@@ -3,7 +3,7 @@ import leafmap.foliumap as leafmap
 import geopandas as gpd
 
 # import farms vector file as a gdf
-farms_df = gpd.read_file(r"data\vector\ce_farms.gpkg")
+farms_df = gpd.read_file(r"data/vector/ce_farms.gpkg")
 farms = farms_df[['farmer', 'crop', 'district', 'province', 'area_ha', 'geometry']]
 
 def add_selectors(farms):
