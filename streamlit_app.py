@@ -9,7 +9,7 @@ st.set_page_config(page_title="Streamlit Geospatial", layout="wide")
 
 apps = [
     {"func": crop_health.app, "title": "Home", "icon": "leaf"},
-    {"func": compare.app, "title": "Compare Health", "icon": "map"},
+    {"func": compare.app, "title": "Compare", "icon": "map"},
     {"func": timelapse.app, "title": "Timelapse", "icon": "hourglass-split"},
 ]
 
