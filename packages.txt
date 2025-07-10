@@ -1,9 +1,6 @@
-build-essential
-python3-dev
 ffmpeg
 gifsicle
+build-essential
+python3-dev
 gdal-bin
 libgdal-dev
-libspatialindex-dev
-libgeos-dev
-libproj-dev
