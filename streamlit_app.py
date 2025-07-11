@@ -1,6 +1,8 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
-from apps import compare, crop_health, timelapse  # import your app modules here
+from apps import compare, crop_health, timelapse, access  # import your app modules here
+
+access.ee_to_st()
 
 st.set_page_config(page_title="Streamlit Geospatial", layout="wide")
 
