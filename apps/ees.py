@@ -1,7 +1,7 @@
-import ee
 import geemap
+import ee
 
-ee.Initialize()
+geemap.ee_initialize()
 
 def get_buffered_farm_gdf(selected_farm_gdf):
     proj_selected_farm_gdf = selected_farm_gdf.to_crs(epsg=3857)
