@@ -1,12 +1,11 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
-from apps import compare, crop_health, timelapse, access  # import your app modules here
+from apps import compare, crop_health, timelapse, access
 
 access.ee_to_st()
 
 st.set_page_config(page_title="Streamlit Geospatial", layout="wide")
 
-# A dictionary of apps in the format of {"App title": "App icon"}
 # More icons can be found here: https://icons.getbootstrap.com
 
 apps = [
@@ -38,7 +37,8 @@ with st.sidebar:
     st.sidebar.title("About")
     st.sidebar.info(
         """
-        This web [app](https://crop-monitor-app-yyhg7vyflyu7dwisr8hihf.streamlit.app/) is maintained by Jedidiah Chibinga.
+        This web [app](https://crop-monitor-app-yyhg7vyflyu7dwisr8hihf.streamlit.app/)
+        is maintained by Jedidiah Chibinga.
     """
     )
 
